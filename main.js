@@ -160,8 +160,8 @@ const selectCategory = document.querySelector(
 );
 createCards(frenchArt);
 
-function createCards(arg) {
-  arg.forEach((item) => {
+async function createCards(arg) {
+  await arg.forEach((item) => {
     let card = document.createElement("div");
     card.className = "main__page__cards__card";
 
