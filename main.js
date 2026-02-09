@@ -1,6 +1,6 @@
 const frenchArt = [
   {
-    img: "https://mash862s.github.io/petProject/pictures/france/amurhaunt.jpg",
+    img: "./pictures/france/amurhaunt.jpg",
     author: "Марсель Руссо",
     title: "Охота Амура",
     info: "Холст, масло (50х80)",
@@ -8,7 +8,7 @@ const frenchArt = [
     shopButton: "В корзину",
   },
   {
-    img: "/pictures/france/ladywithdog.jpg",
+    img: "./pictures/france/ladywithdog.jpg",
     author: "Анри Селин",
     title: "Дама с собачкой",
     info: "Акрил, бумага (50х80)",
@@ -16,7 +16,7 @@ const frenchArt = [
     shopButton: "В корзину",
   },
   {
-    img: "/pictures/france/proccedures.jpg",
+    img: "./pictures/france/proccedures.jpg",
     author: "Франсуа Дюпон",
     title: "Процедура",
     info: "Цветная литография (40х60)",
@@ -24,7 +24,7 @@ const frenchArt = [
     shopButton: "В корзину",
   },
   {
-    img: "/pictures/france/rose.jpg",
+    img: "./pictures/france/rose.jpg",
     author: "Луи  Детуш",
     title: "Роза",
     info: "Бумага, акрил (50х80)",
@@ -32,7 +32,7 @@ const frenchArt = [
     shopButton: "В корзину",
   },
   {
-    img: "/pictures/france/birds.jpg",
+    img: "./pictures/france/birds.jpg",
     author: "Франсуа Дюпон",
     title: "Птичья трапеза",
     info: "Цветная  литография (40х60)",
@@ -40,7 +40,7 @@ const frenchArt = [
     shopButton: "В корзину",
   },
   {
-    img: "/pictures/france/fish.jpg",
+    img: "./pictures/france/fish.jpg",
     author: "Пьер Моранж",
     title: "Пейзаж с рыбой",
     info: "Цветная литография (40х60)",
@@ -51,7 +51,7 @@ const frenchArt = [
 
 const germanyArt = [
   {
-    img: "/pictures/germany/owntown.png",
+    img: "./pictures/germany/owntown.png",
     author: "Курт Вернер",
     title: "Над городом",
     info: "Цветная литография(40х60)",
@@ -59,7 +59,7 @@ const germanyArt = [
     shopButton: "В корзину",
   },
   {
-    img: "/pictures/germany/chicks.png",
+    img: "./pictures/germany/chicks.png",
     author: "Макс Рихтер",
     title: "Птенцы",
     info: "Бумага, акрил (50х80)",
@@ -67,7 +67,7 @@ const germanyArt = [
     shopButton: "В корзину",
   },
   {
-    img: "/pictures/germany/amongtheleaves.png",
+    img: "./pictures/germany/amongtheleaves.png",
     author: "Мартин Майер",
     title: "Среди листьев",
     info: "Цветная литография (40х60)",
@@ -75,7 +75,7 @@ const germanyArt = [
     shopButton: "В корзину",
   },
   {
-    img: "/pictures/germany/brightbird.png",
+    img: "./pictures/germany/brightbird.png",
     author: "Герман Беккер",
     title: "Яркая птица",
     info: "Цветная литография (50х80)",
@@ -83,7 +83,7 @@ const germanyArt = [
     shopButton: "В корзину",
   },
   {
-    img: "/pictures/germany/woodpeckers.png",
+    img: "./pictures/germany/woodpeckers.png",
     author: "Вульф Бауэр",
     title: "Дятлы",
     info: "Бумага, Акрил (50х80)",
@@ -91,7 +91,7 @@ const germanyArt = [
     shopButton: "В корзину",
   },
   {
-    img: "/pictures/germany/bigwaters.png",
+    img: "./pictures/germany/bigwaters.png",
     author: "Вальер Артман",
     title: "Большие воды",
     info: "Бумага, акрил (50х80)",
@@ -102,7 +102,7 @@ const germanyArt = [
 
 const englandArt = [
   {
-    img: "/pictures/england//wildebeast.png",
+    img: "./pictures/england//wildebeast.png",
     author: "Пол Смит",
     title: "Дикий зверь",
     info: "Акварель, бумага(50х80)",
@@ -110,7 +110,7 @@ const englandArt = [
     shopButton: "В корзину",
   },
   {
-    img: "/pictures//england/rockycoasts.png",
+    img: "./pictures//england/rockycoasts.png",
     author: "Джон Уайт",
     title: "Скалистый берег",
     info: "Цветная литография (40х60)",
@@ -118,7 +118,7 @@ const englandArt = [
     shopButton: "В корзину",
   },
   {
-    img: "/pictures/england/riverandmounts.png",
+    img: "./pictures/england/riverandmounts.png",
     author: "Джим Уотсон",
     title: "Река и горы",
     info: "Акварель, бумага(40х60)",
@@ -126,7 +126,7 @@ const englandArt = [
     shopButton: "В корзину",
   },
   {
-    img: "/pictures/england/whiteparrot.png",
+    img: "./pictures/england/whiteparrot.png",
     author: "Юджин Зиллион",
     title: "Белый попугай",
     info: "Цветная литография (40х0)",
@@ -134,7 +134,7 @@ const englandArt = [
     shopButton: "В корзину",
   },
   {
-    img: "/pictures/england/nigthtfish.png",
+    img: "./pictures/england/nigthtfish.png",
     author: "Эрик Гилман",
     title: "Ночная рыба",
     info: "Бумага, Акрил (50х80)",
@@ -142,7 +142,7 @@ const englandArt = [
     shopButton: "В корзину",
   },
   {
-    img: "/pictures/england/redcat.png",
+    img: "./pictures/england/redcat.png",
     author: "Альфред Бар",
     title: "Рыжий кот",
     info: "Цветная литография (40х60)",
