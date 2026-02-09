@@ -164,7 +164,8 @@ function createCardElement(tagName, className, cardText, item) {
   if (tagName != "img") {
     let cardElement = document.createElement(`${tagName}`);
     cardElement.className = `main__page__cards__card__${className}`;
-    cardElement.innerText = cardText;
+    cardElement.innerText = cardText != undefined ? cardText : "В корзину";
+
     return cardElement;
   } else {
     let cardImage = document.createElement(`${tagName}`);
@@ -187,7 +188,6 @@ function createCards(arg) {
       (cardInfo = createCardElement("p", "info", item.info)),
       (cardPrice = createCardElement("p", "price", item.price)),
       (cardShopButton = createCardElement("button", "shopButton", item.shop)),
-      (cardAuthor = createCardElement("p", "author", item.author)),
     ];
 
     card.append(...elements);
