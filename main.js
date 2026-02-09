@@ -160,42 +160,37 @@ const selectCategory = document.querySelector(
 );
 createCards(frenchArt);
 
-async function createCards(arg) {
-  await arg.forEach((item) => {
+function createCardElement(tagName, className, cardText, item) {
+  if (tagName != "img") {
+    let cardElement = document.createElement(`${tagName}`);
+    cardElement.className = `main__page__cards__card__${className}`;
+    cardElement.innerText = cardText;
+    return cardElement;
+  } else {
+    let cardImage = document.createElement(`${tagName}`);
+    cardImage.className = `main__page__cards__card__${className}`;
+    cardImage.src = item.img;
+    cardImage.alt = item.author || "Art";
+    return cardImage;
+  }
+}
+
+function createCards(arg) {
+  arg.forEach((item) => {
     let card = document.createElement("div");
     card.className = "main__page__cards__card";
 
-    let cardImage = document.createElement("img");
-    cardImage.className = "main__page__cards__card__img";
-    cardImage.src = item.img;
-    cardImage.alt = item.author || "Art";
+    const elements = [
+      (cardImage = createCardElement("img", "img", null, item)),
+      (cardAuthor = createCardElement("p", "author", item.author)),
+      (cardTitle = createCardElement("p", "title", item.title)),
+      (cardInfo = createCardElement("p", "info", item.info)),
+      (cardPrice = createCardElement("p", "price", item.price)),
+      (cardShopButton = createCardElement("button", "shopButton", item.shop)),
+      (cardAuthor = createCardElement("p", "author", item.author)),
+    ];
 
-    let cardAuthor = document.createElement("p");
-    cardAuthor.className = "main__page__cards__card__author";
-    cardAuthor.innerText = item.author;
-
-    let cardTitle = document.createElement("p");
-    cardTitle.className = "main__page__cards__card__title";
-    cardTitle.innerText = item.title;
-
-    let cardInfo = document.createElement("p");
-    cardInfo.className = "main__page__cards__card__info";
-    cardInfo.innerText = item.info;
-
-    let cardPrice = document.createElement("p");
-    cardPrice.className = "main__page__cards__card__price";
-    cardPrice.innerText = item.price;
-
-    let cardShopButton = document.createElement("button");
-    cardShopButton.className = "main__page__cards__card__shop__button";
-    cardShopButton.innerText = item.shopButton;
-
-    card.append(cardImage);
-    card.append(cardAuthor);
-    card.append(cardTitle);
-    card.append(cardInfo);
-    card.append(cardPrice);
-    card.append(cardShopButton);
+    card.append(...elements);
 
     mainPageCards.append(card);
   });

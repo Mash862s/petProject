@@ -28,13 +28,24 @@
 body {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
-  max-width: 100%;
+  margin: 0 auto;
+  max-width: 136rem;
+  border: 1px solid red;
 }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header__info {
   display: flex;
-  justify-content: space-around;
-  gap: 20rem;
+  justify-content: space-between;
+  min-width: 136rem;
+  padding: 0 20rem;
   align-items: center;
   min-height: 10rem;
   background-color: var(--myBackgroundColor);
@@ -56,7 +67,7 @@ body {
 
 .header__info__nav__list__item,
 i {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 2rem;
   cursor: pointer;
 }
@@ -65,8 +76,9 @@ i {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 0 10rem;
+  min-width: 136rem;
   gap: 4rem;
+  padding: 0 10rem;
 }
 
 .hero__logo__description {
@@ -121,11 +133,11 @@ i {
 }
 
 .main__page__selected {
-  margin: 4rem 3rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 2rem 10rem;
 }
 
 .main__page__selected__category {
@@ -162,12 +174,13 @@ i {
 }
 
 .main__page__cards {
-  min-width: 111rem;
-  margin: 4rem auto;
+  min-width: 136rem;
+  padding: 2rem 4rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  flex: 1;
 }
 
 .main__page__cards__card {
@@ -216,7 +229,7 @@ i {
   margin: 2rem 0;
 }
 
-.main__page__cards__card__shop__button {
+.main__page__cards__card__shopButton {
   background-color: transparent;
   width: 30rem;
   height: 6rem;
@@ -227,7 +240,7 @@ i {
   transition: 0.2s all;
 }
 
-.main__page__cards__card__shop__button:hover {
+.main__page__cards__card__shopButton:hover {
   background-color: var(--primaryBtn_active);
   color: var(--primaryBtn_default);
   transition: 0.2s all;

@@ -13,48 +13,46 @@
     <script defer src="main.js"></script>
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <div class="header__info">
-          <div class="header__info__logo">
-            <img src="/frames/frameheader.svg" alt="" />
-          </div>
-          <div class="header__info__nav">
-            <ul class="header__info__nav__list">
-              <li
-                class="header__info__nav__list__item"
-                data-scroll-to="gallery"
-              >
-                Репродукции
-              </li>
-              <li class="header__info__nav__list__item" data-scroll-to="news">
-                Новинки
-              </li>
-              <li class="header__info__nav__list__item" data-scroll-to="about">
-                О нас
-              </li>
-              <li class="header__info__nav__list__item">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </li>
-            </ul>
-          </div>
+    <header class="header">
+      <div class="header__info">
+        <div class="header__info__logo">
+          <img src="./frames/frameheader.svg" alt="" />
         </div>
-        <div class="hero__logo">
-          <div class="hero__logo__img">
-            <img src="/frames/layerheader.png" alt="" />
-          </div>
-          <div class="hero__logo__description">
-            <h1>Реплики картин от <span>Ink. House</span></h1>
-            <p>
-              Высокое качество отрисовки на плотной бумаге или льняном холсте.
-              Редкие произведения, доступные цены.
-            </p>
-            <button>Продукция</button>
-          </div>
+        <div class="header__info__nav">
+          <ul class="header__info__nav__list">
+            <li class="header__info__nav__list__item" data-scroll-to="gallery">
+              Репродукции
+            </li>
+            <li class="header__info__nav__list__item" data-scroll-to="news">
+              Новинки
+            </li>
+            <li class="header__info__nav__list__item" data-scroll-to="about">
+              О нас
+            </li>
+            <li class="header__info__nav__list__item">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </li>
+          </ul>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <main class="main__page">
+    <main class="main__page">
+      <div class="hero__logo">
+        <div class="hero__logo__img">
+          <img src="/frames/layerheader.png" alt="" />
+        </div>
+        <div class="hero__logo__description">
+          <h1>Реплики картин от <span>Ink. House</span></h1>
+          <p>
+            Высокое качество отрисовки на плотной бумаге или льняном холсте.
+            Редкие произведения, доступные цены.
+          </p>
+          <button>Продукция</button>
+        </div>
+      </div>
+
+      <div class="main__gallery">
         <div class="main__page__selected" id="gallery">
           <div class="main__page__selected__title">Репродукции</div>
           <div class="main__page__selected__category">
@@ -81,23 +79,8 @@
             </button>
           </div>
         </div>
-        <div class="main__page__cards">
-          <!-- <div class="main__page__cards__card">
-            <img
-              class="main__page__cards__card__img"
-              src="/pictures/france/amurHaunt.jpg"
-              alt="#"
-            />
-            <p class="main__page__cards__card__author">Марсель Руссо</p>
-            <p class="main__page__cards__card__title">Охота Амура</p>
-            <p class="main__page__cards__card__info">Холст, масло (50Х80)</p>
-            <p class="main__page__cards__card__price">14 500 руб</p>
-            <button class="main__page__cards__card__shop__button">
-              В корзину
-            </button>
-          </div> -->
-        </div>
-      </main>
-    </div>
+        <div class="main__page__cards"></div>
+      </div>
+    </main>
   </body>
 </html>
